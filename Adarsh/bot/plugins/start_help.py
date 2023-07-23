@@ -78,7 +78,7 @@ async def start(b, m):
         chat_id=m.chat.id,
         photo ="https://github-production-user-asset-6210df.s3.amazonaws.com/131546223/255410765-542d2863-2b4e-45fd-9478-d7c37931c6c0.png",
         caption =f'Hi {m.from_user.mention(style="md")}!,\nI am Telegram File to Link Generator Bot with Channel support.\nSend me any file and get a direct download link and streamable link.!',
-        reply_markup=buttonz)
+        )
 
 
 @StreamBot.on_message((filters.command("help") | filters.regex('help📚')) & filters.private )
